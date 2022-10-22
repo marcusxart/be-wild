@@ -69,7 +69,7 @@ const MenuItem = styled.li`
     display: block;
     width: 0%;
     height: 2px;
-    background: ${(props) => props.theme.text};
+    background: ${(props) => props.theme.body};
     transition: width 0.3s ease;
   }
   &:hover::after {
