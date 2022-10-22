@@ -53,7 +53,6 @@ const Menu = styled.ul`
     transition: all 0.3s ease;
     flex-direction: column;
     justify-content: center;
-
     touch-action: none;
   }
 `;
@@ -79,6 +78,7 @@ const MenuItem = styled.li`
   @media (max-width: 64em) {
     margin: 1rem 0;
     font-size: ${(props) => props.theme.fontmd};
+    color: ${(props) => props.theme.text};
 
     &::after {
       display: none;
@@ -89,7 +89,7 @@ const HamburgerMenu = styled.span`
   width: ${(props) => (props.click ? "2rem" : "1.5rem")};
 
   height: 2px;
-  background: ${(props) => props.theme.text};
+  background: ${(props) => props.theme.body};
 
   position: absolute;
   top: 2rem;
@@ -117,7 +117,7 @@ const HamburgerMenu = styled.span`
     width: ${(props) => (props.click ? "1rem" : "1.5rem")};
     height: 2px;
     right: ${(props) => (props.click ? "-2px" : "0")};
-    background: ${(props) => props.theme.text};
+    background: ${(props) => props.theme.body};
     position: absolute;
     transition: all 0.3s ease;
   }

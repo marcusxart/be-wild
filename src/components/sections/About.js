@@ -20,11 +20,11 @@ const Section = styled.section`
 const Container = styled.div`
   width: 75%;
   margin: 0 auto;
-  /* background-color: lightblue; */
-
+  /* background-color: pink; */
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
   @media (max-width: 70em) {
     width: 85%;
   }
@@ -35,6 +35,7 @@ const Container = styled.div`
 
     & > *:last-child {
       width: 80%;
+      min-height: 35vh;
     }
   }
   @media (max-width: 40em) {

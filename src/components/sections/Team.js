@@ -99,7 +99,7 @@ const Container = styled.div`
   align-items: center;
   flex-wrap: wrap;
   @media (max-width: 64em) {
-    width: 80%;
+    width: 90%;
   }
   @media (max-width: 48em) {
     width: 90%;

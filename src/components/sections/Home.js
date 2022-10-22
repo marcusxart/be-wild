@@ -25,7 +25,7 @@ const Container = styled.div`
   align-items: center;
 
   @media (max-width: 64em) {
-    width: 85%;
+    width: 90%;
   }
   @media (max-width: 48em) {
     flex-direction: column-reverse;
