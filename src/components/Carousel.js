@@ -1,27 +1,25 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cards";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-
-
 import { Pagination, Navigation, Autoplay, EffectCards } from "swiper";
 
-import img1 from '../assets/Nfts/bighead.svg';
-import img2 from '../assets/Nfts/bighead-1.svg';
-import img3 from '../assets/Nfts/bighead-2.svg';
-import img4 from '../assets/Nfts/bighead-3.svg';
-import img5 from '../assets/Nfts/bighead-4.svg';
-import img6 from '../assets/Nfts/bighead-5.svg';
-import img7 from '../assets/Nfts/bighead-6.svg';
-import img8 from '../assets/Nfts/bighead-7.svg';
-import img9 from '../assets/Nfts/bighead-8.svg';
-import img10 from '../assets/Nfts/bighead-9.svg';
+import img1 from "../assets/Nfts/NFT-1.png";
+import img2 from "../assets/Nfts/NFT-2.png";
+import img3 from "../assets/Nfts/NFT-3.png";
+import img4 from "../assets/Nfts/NFT-4.png";
+import img5 from "../assets/Nfts/NFT-5.png";
+import img6 from "../assets/Nfts/NFT-6.png";
+import img7 from "../assets/Nfts/NFT-7.png";
+import img8 from "../assets/Nfts/NFT-8.png";
+import img9 from "../assets/Nfts/NFT-9.png";
+import img10 from "../assets/Nfts/NFT-10.png";
 
-import Arrow from '../assets/Arrow.svg';
+import Arrow from "../assets/Arrow.svg";
 
 const Container = styled.div`
 width: 25vw;
@@ -33,7 +31,7 @@ height: 70vh;
 }
 
 .swiper-slide{
-    background-color: ${props => props.theme.carouselColor};
+    background-color: ${(props) => props.theme.carouselColor};
 
     border-radius: 20px;
 
@@ -50,7 +48,7 @@ height: 70vh;
 }
 
 .swiper-button-next{
-    color: ${props => props.theme.text};
+    color: ${(props) => props.theme.text};
     right: 0;
     width: 4rem;
     top: 60%;
@@ -64,7 +62,7 @@ height: 70vh;
     }
 }
 .swiper-button-prev{
-    color: ${props => props.theme.text};
+    color: ${(props) => props.theme.text};
     left: 0;
     top: 60%;
     width: 4rem;
@@ -77,43 +75,71 @@ height: 70vh;
         display: none;
     }
 }
-`
-
+`;
 
 const Carousel = () => {
-    return (
-        <Container>
-            <Swiper
-        autoplay= {{
-            delay:2000,
-            disableOnInteraction:false,
+  return (
+    <Container>
+      <Swiper
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
         }}
         pagination={{
-            type:'fraction',
+          type: "fraction",
         }}
         scrollbar={{
-            draggable: true
+          draggable: true,
         }}
         modules={[EffectCards, Pagination, Navigation, Autoplay]}
         navigation={true}
         effect={"cards"}
         grabCursor={true}
-        
         className="mySwiper"
       >
-        <SwiperSlide> <img src={img1} alt="The Weridos" /> </SwiperSlide>
-        <SwiperSlide> <img src={img2} alt="The Weridos" /> </SwiperSlide>
-        <SwiperSlide> <img src={img3} alt="The Weridos" /> </SwiperSlide>
-        <SwiperSlide> <img src={img4} alt="The Weridos" /> </SwiperSlide>
-        <SwiperSlide> <img src={img5} alt="The Weridos" /> </SwiperSlide>
-        <SwiperSlide> <img src={img6} alt="The Weridos" /> </SwiperSlide>
-        <SwiperSlide> <img src={img7} alt="The Weridos" /> </SwiperSlide>
-        <SwiperSlide> <img src={img8} alt="The Weridos" /> </SwiperSlide>
-        <SwiperSlide> <img src={img9} alt="The Weridos" /> </SwiperSlide>
-        <SwiperSlide> <img src={img10} alt="The Weridos" /> </SwiperSlide>
+        <SwiperSlide>
+          {" "}
+          <img src={img1} alt="The Weridos" />{" "}
+        </SwiperSlide>
+        <SwiperSlide>
+          {" "}
+          <img src={img2} alt="The Weridos" />{" "}
+        </SwiperSlide>
+        <SwiperSlide>
+          {" "}
+          <img src={img3} alt="The Weridos" />{" "}
+        </SwiperSlide>
+        <SwiperSlide>
+          {" "}
+          <img src={img4} alt="The Weridos" />{" "}
+        </SwiperSlide>
+        <SwiperSlide>
+          {" "}
+          <img src={img5} alt="The Weridos" />{" "}
+        </SwiperSlide>
+        <SwiperSlide>
+          {" "}
+          <img src={img6} alt="The Weridos" />{" "}
+        </SwiperSlide>
+        <SwiperSlide>
+          {" "}
+          <img src={img7} alt="The Weridos" />{" "}
+        </SwiperSlide>
+        <SwiperSlide>
+          {" "}
+          <img src={img8} alt="The Weridos" />{" "}
+        </SwiperSlide>
+        <SwiperSlide>
+          {" "}
+          <img src={img9} alt="The Weridos" />{" "}
+        </SwiperSlide>
+        <SwiperSlide>
+          {" "}
+          <img src={img10} alt="The Weridos" />{" "}
+        </SwiperSlide>
       </Swiper>
-        </Container>
-    )
-}
+    </Container>
+  );
+};
 
-export default Carousel 
+export default Carousel;

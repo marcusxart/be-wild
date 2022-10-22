@@ -140,7 +140,7 @@ const About = () => {
           </Suspense>{" "}
         </Box>
         <Box>
-          <Title>Welcome to Wild Animals Club🐯🙈.</Title>
+          <Title>Welcome to Wild Animals Club</Title>
           <SubText>
             Wild Animals Club is a private collection of unique digital
             collectibles NFT's, with Wild Animals being stored on the Aptos

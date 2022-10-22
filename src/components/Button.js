@@ -25,7 +25,8 @@ const Btn = styled.button`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    border: 2px solid ${(props) => props.theme.text};
+    border: 2px solid
+      ${(props) => (props.secondary ? props.theme.body : props.theme.text)};
     width: 100%;
     height: 100%;
     border-radius: 50px;
@@ -42,7 +43,7 @@ const Btn = styled.button`
   }
 `;
 
-const Button = ({ text, link, secondary }) => {
+const Button = ({ text, link, secondary = false }) => {
   return (
     <a href={link} aria-label={text} target="_blank" rel="noreferrer">
       <Btn secondary={secondary}>{text}</Btn>
