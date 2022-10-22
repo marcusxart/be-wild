@@ -76,7 +76,7 @@ const Container = styled.div`
     }
   }
   @media (max-width: 64em) {
-    width: 65vw;
+    width: 50vw;
     height: 50vh;
     .swiper-button-prev,
     .swiper-button-next {
